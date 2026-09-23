@@ -1,13 +1,14 @@
 <p align="center">
  <strong>GMODCraft</strong><br/>
- A self-contained browser-hosted copy of EaglercraftX 1.8 Offline.<br/>
- Packaged as a single static HTML file for simple local use or static-site hosting.<br/>
+ A portable, browser-hosted EaglercraftX 1.8 Offline package distributed as a single static HTML file.<br/>
+ Designed for simple local use, static hosting, and zero-build deployment.
 </p>
 
 <p align="center">
  <a href="https://eaglercraft.com">
   <img src="https://img.shields.io/badge/EaglercraftX-1.8-blue" alt="EaglercraftX 1.8" />
  </a>
+ <img src="https://img.shields.io/badge/Build-Static%20HTML-success" alt="Static HTML" />
 </p>
 
 <h1 align="center">GMODCraft</h1>
@@ -16,16 +17,9 @@
 
 ## Overview
 
-GMODCraft contains a single-file EaglercraftX 1.8 Offline browser client.
+GMODCraft packages an EaglercraftX 1.8 Offline browser client into a single `index.html` file.
 
-The repository is designed to make the client easy to:
-
-- Open locally
-- Host as a static page
-- Keep as a portable single-file build
-- Deploy through services such as GitHub Pages
-
-No compilation or project build process is required.
+There is no package manager, compilation step, application server, or framework setup required. The project can be opened directly or served by practically any static web server.
 
 ## Quick Start
 
@@ -36,56 +30,82 @@ git clone https://github.com/bleonheart/GMODCraft.git
 cd GMODCraft
 ```
 
-You can open `index.html` directly in a browser or serve the directory locally:
+Serve the directory locally:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit:
+Then open:
 
 ```text
 http://localhost:8000
 ```
 
+For browsers that permit it, `index.html` can also be opened directly from disk.
+
 ## Features
 
 - EaglercraftX 1.8 Offline client
-- Single self-contained `index.html`
+- Single-file deployment
+- No dependency installation
 - No package manager
-- No build system
-- No server-side runtime required
-- Suitable for static hosting
-- Embedded browser client resources
-- Relay configuration included in the packaged client
+- No build process
+- No backend runtime
+- Portable static hosting
+- Embedded browser runtime resources
+- Suitable for GitHub Pages and conventional static hosts
 
 ## Repository Structure
 
 ```text
 GMODCraft/
+├── .gitattributes
+├── README.md
 └── index.html
 ```
 
-The HTML file contains the packaged EaglercraftX client and its embedded runtime resources.
+The packaged client is contained inside `index.html`.
 
 ## Hosting
 
-Because the project is completely static, it can be hosted with any normal static-file server.
-
-Examples include:
+Because GMODCraft is fully static, it can be served through:
 
 - GitHub Pages
 - Nginx
 - Apache
 - Python's built-in HTTP server
-- Other static web hosting platforms
+- Local static-file servers
+- Other static hosting platforms
+
+No server-side application code is required.
+
+## Deployment Example
+
+Using Python:
+
+```bash
+python -m http.server 8000
+```
+
+Using a conventional web server, place `index.html` in the desired document root and expose it as a normal static page.
 
 ## Upstream & Attribution
 
-This repository does **not** claim authorship of EaglercraftX.
+GMODCraft does **not** claim authorship of EaglercraftX or Minecraft.
 
-The packaged client identifies itself as **EaglercraftX 1.8 Offline** and references the Eaglercraft project:
+The packaged browser client identifies itself as EaglercraftX 1.8 Offline.
+
+Upstream project:
 
 https://eaglercraft.com
 
-EaglercraftX and Minecraft-related code, assets, names, and trademarks belong to their respective authors and rights holders. Review the applicable upstream terms before redistributing or modifying the packaged client.
+EaglercraftX, Minecraft-related code, assets, names, and trademarks remain the property of their respective authors and rights holders.
+
+Anyone redistributing or modifying the packaged client should review the applicable upstream licensing, distribution terms, and third-party rights.
+
+---
+
+<p align="center">
+ <strong>Single file. Static hosting. No build step.</strong>
+</p>
