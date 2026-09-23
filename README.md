@@ -1,8 +1,11 @@
 <p align="center">
- <img src="./logo.svg" alt="Voxelith Logo" width="220" /><br/>
- <strong>GMODCraft</strong><br/>
- A portable, browser-hosted EaglercraftX 1.8 Offline package distributed as a single static HTML file.<br/>
+ <strong>Voxelith — Portable Browser Client</strong><br/>
+ A browser-hosted EaglercraftX 1.8 Offline package distributed as a single static HTML file.<br/>
  Designed for simple local use, static hosting, and zero-build deployment.
+</p>
+
+<p align="center">
+ <img src="./logo.svg" alt="Voxelith Logo" width="220" />
 </p>
 
 <p align="center">
@@ -12,13 +15,11 @@
  <img src="https://img.shields.io/badge/Build-Static%20HTML-success" alt="Static HTML" />
 </p>
 
-<h1 align="center">GMODCraft</h1>
-
 ---
 
 ## Overview
 
-GMODCraft packages an EaglercraftX 1.8 Offline browser client into a single `index.html` file.
+Voxelith packages an EaglercraftX 1.8 Offline browser client into a single `index.html` file.
 
 There is no package manager, compilation step, application server, or framework setup required. The project can be opened directly or served by practically any static web server.
 
@@ -27,8 +28,8 @@ There is no package manager, compilation step, application server, or framework 
 Clone the repository:
 
 ```bash
-git clone https://github.com/bleonheart/GMODCraft.git
-cd GMODCraft
+git clone https://github.com/bleonheart/Voxelith.git
+cd Voxelith
 ```
 
 Serve the directory locally:
@@ -60,7 +61,7 @@ For browsers that permit it, `index.html` can also be opened directly from disk.
 ## Repository Structure
 
 ```text
-GMODCraft/
+Voxelith/
 ├── .gitattributes
 ├── README.md
 └── index.html
@@ -70,7 +71,7 @@ The packaged client is contained inside `index.html`.
 
 ## Hosting
 
-Because GMODCraft is fully static, it can be served through:
+Because Voxelith is fully static, it can be served through:
 
 - GitHub Pages
 - Nginx
@@ -93,7 +94,7 @@ Using a conventional web server, place `index.html` in the desired document root
 
 ## Upstream & Attribution
 
-GMODCraft does **not** claim authorship of EaglercraftX or Minecraft.
+Voxelith does **not** claim authorship of EaglercraftX or Minecraft.
 
 The packaged browser client identifies itself as EaglercraftX 1.8 Offline.
 
