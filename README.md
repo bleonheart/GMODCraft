@@ -1,4 +1,5 @@
 <p align="center">
+ <img src="./logo.svg" alt="Voxelith Logo" width="220" /><br/>
  <strong>GMODCraft</strong><br/>
  A portable, browser-hosted EaglercraftX 1.8 Offline package distributed as a single static HTML file.<br/>
  Designed for simple local use, static hosting, and zero-build deployment.
