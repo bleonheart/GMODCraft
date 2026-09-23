@@ -1,7 +1,7 @@
 <p align="center">
- <strong>Voxelith — Portable Browser Client</strong><br/>
- A browser-hosted EaglercraftX 1.8 Offline package distributed as a single static HTML file.<br/>
- Designed for simple local use, static hosting, and zero-build deployment.
+ <strong>Voxelith — Browser-Based Voxel Client</strong><br/>
+ An actively developed browser client inspired by EaglercraftX, with custom modifications and ongoing project-specific development.<br/>
+ Distributed as a self-contained static browser build for straightforward hosting, experimentation, and continued iteration.
 </p>
 
 <p align="center">
@@ -10,18 +10,21 @@
 
 <p align="center">
  <a href="https://eaglercraft.com">
-  <img src="https://img.shields.io/badge/EaglercraftX-1.8-blue" alt="EaglercraftX 1.8" />
+  <img src="https://img.shields.io/badge/Inspired%20by-EaglercraftX-blue" alt="Inspired by EaglercraftX" />
  </a>
- <img src="https://img.shields.io/badge/Build-Static%20HTML-success" alt="Static HTML" />
+ <img src="https://img.shields.io/badge/Status-Active%20Development-success" alt="Active Development" />
+ <img src="https://img.shields.io/badge/Build-Static%20HTML-informational" alt="Static HTML" />
 </p>
 
 ---
 
 ## Overview
 
-Voxelith packages an EaglercraftX 1.8 Offline browser client into a single `index.html` file.
+Voxelith is an actively developed browser-based voxel client inspired by EaglercraftX and maintained as its own project.
 
-There is no package manager, compilation step, application server, or framework setup required. The project can be opened directly or served by practically any static web server.
+It is **not** intended to be a stock or untouched EaglercraftX Offline distribution. Voxelith includes custom modifications, project-specific changes, and continued development built around the browser-based gameplay foundation.
+
+The current repository is distributed as a self-contained `index.html` build. It can be opened directly or served through a normal static web server without requiring a runtime backend.
 
 ## Quick Start
 
@@ -48,12 +51,12 @@ For browsers that permit it, `index.html` can also be opened directly from disk.
 
 ## Features
 
-- EaglercraftX 1.8 Offline client
-- Single-file deployment
-- No dependency installation
-- No package manager
-- No build process
-- No backend runtime
+- Actively developed and maintained
+- Inspired by EaglercraftX rather than distributed as an untouched upstream build
+- Custom project-specific modifications and continued iteration
+- Self-contained browser deployment
+- Single-file distribution in the current repository
+- No runtime backend required
 - Portable static hosting
 - Embedded browser runtime resources
 - Suitable for GitHub Pages and conventional static hosts
@@ -67,7 +70,7 @@ Voxelith/
 └── index.html
 ```
 
-The packaged client is contained inside `index.html`.
+The current Voxelith browser build is contained inside `index.html`.
 
 ## Hosting
 
@@ -92,22 +95,20 @@ python -m http.server 8000
 
 Using a conventional web server, place `index.html` in the desired document root and expose it as a normal static page.
 
-## Upstream & Attribution
+## Inspiration & Attribution
 
-Voxelith does **not** claim authorship of EaglercraftX or Minecraft.
+Voxelith is inspired by EaglercraftX and may retain technology or components derived from that ecosystem, but it is maintained as an actively developed project with its own modifications and direction.
 
-The packaged browser client identifies itself as EaglercraftX 1.8 Offline.
+Voxelith is not presented as the official EaglercraftX distribution and does not claim authorship of EaglercraftX or Minecraft.
 
-Upstream project:
+Reference project:
 
 https://eaglercraft.com
 
-EaglercraftX, Minecraft-related code, assets, names, and trademarks remain the property of their respective authors and rights holders.
-
-Anyone redistributing or modifying the packaged client should review the applicable upstream licensing, distribution terms, and third-party rights.
+EaglercraftX, Minecraft-related code, assets, names, and trademarks remain the property of their respective authors and rights holders. Redistribution and modification should respect the applicable upstream licensing, distribution terms, and third-party rights.
 
 ---
 
 <p align="center">
- <strong>Single file. Static hosting. No build step.</strong>
+ <strong>Inspired by EaglercraftX. Actively developed as Voxelith.</strong>
 </p>
